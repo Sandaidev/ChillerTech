@@ -2,4 +2,4 @@ title: Sandailog
 description: I guess I have a blog now...
 
 theme: jekyll-theme-midnight
-site.baseurl: https://sandaidev.github.io/sandailog
+site.baseurl: /sandailog/
