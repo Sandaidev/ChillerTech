@@ -40,7 +40,8 @@
         <ul>
           {% for post in site.posts %}
             <li>
-               <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+              <h3><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
+              <h4><font color="grey">[{{ post.date | date_to_long_string }}]</font><h4>
             </li>
           {% endfor %}
         </ul>
