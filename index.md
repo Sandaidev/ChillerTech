@@ -1,9 +1,8 @@
 ---
 layout: index
+title: Welcome!
 ---
 
-# H1 Header
+Hi, I'm Sandai! I'm a hobbyist programmer and this is my dev blog!
 
-## H2 Header
-
-Lorem Ipsum...
+Here are my most recent posts :
