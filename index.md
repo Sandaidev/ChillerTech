@@ -3,5 +3,5 @@ layout: index
 title: Welcome!
 ---
 
-Hi, I'm ***Sandai***! I'm a hobbyist programmer and this is my dev blog!
-Here are my most recent posts :
+Hi, I'm **Erwan**, I like to tinker with software.
+Here's the most recent posts --
