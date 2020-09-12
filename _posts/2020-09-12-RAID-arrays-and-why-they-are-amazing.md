@@ -6,7 +6,7 @@ title: RAID Arrays and why they're amazing
 
 RAID stands for "**R**edundant **A**rray of **I**ndependent **D**isks", and it has different levels that are each tailored for a specific use case.
 
-**Here's a short list of the most popular ones**:
+**Here's a short list of the most popular ones** --
 
     - RAID 0
   
@@ -33,6 +33,8 @@ Please also notice that the more drives you add to a RAID 0 array, the more it i
 ### RAID 1
 
 Just like the previous note, a RAID 1 array takes **two drives** and duplicates the data from the first drive to the second drive. if your first drive fails, the second one takes over. Now, when you'll replace the failed drive, the array will effectively do what we call a "*rebuild*", meaning that it will copy the entire contents of the first drive to the new one.
+
+The drawback is that you effectively lose half of your drives worth of capacity, as they will be dedicated to data mirroring/redundancy.
 
 ### RAID 5
 
