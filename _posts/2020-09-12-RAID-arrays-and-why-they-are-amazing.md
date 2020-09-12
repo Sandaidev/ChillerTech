@@ -1,6 +1,5 @@
 ---
 title: RAID Arrays and why they're amazing
-site.baseurl: /ChillerTech/
 ---
 
 # Concept
