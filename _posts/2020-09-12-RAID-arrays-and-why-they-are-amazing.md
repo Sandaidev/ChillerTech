@@ -15,8 +15,6 @@ RAID stands for "**R**edundant **A**rray of **I**ndependent **D**isks", and it h
     - RAID 5
   
     - RAID 6
-    
-    - (a few more standard and non-standard ones as well but they're not as popular so we won't cover them.)
 
 So, let's explain each of them in more detail shall we?
 
