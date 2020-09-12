@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Welcome!
+title: Homepage
 ---
 
 Hi, here's my most recent posts --
