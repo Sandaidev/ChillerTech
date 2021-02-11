@@ -1,7 +1,1 @@
----
-layout: index
-title: Homepage
----
-
-Hi, here's my most recent posts --
-[[parent site]](../)
+This website is under a re-write. Stay tuned!

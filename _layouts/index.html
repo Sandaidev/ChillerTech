@@ -36,15 +36,6 @@
         </div>
 
         {{ content }}
-        
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <h3><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a><font size="-1" color="grey"><em> — [{{ post.date | date_to_long_string }}]</em></font></h3>
-              <hr>
-            </li>
-          {% endfor %}
-        </ul>
    
       </section>
 
