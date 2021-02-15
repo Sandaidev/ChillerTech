@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+{% include head_post.html %}
+<body>
+{% include header.html %}
+
+<div class="container border border-light-50 rounded p-3 bg-dark">
+    <div class="text-wrap text-center badge bg-light text-dark fs-3 mb-3">Post ⁓ {{ page.title }}</div>
+
+    <p class="text-muted">
+        Posted on ⁓ {{ page.date | date_to_long_string }} ⋮ Tags ⁓
+        {% for tag in page.tags %}
+        <span class="badge bg-black"> {{ tag }} </span>
+        {% endfor %}
+    </p>
+
+    <hr class="text-muted">
+
+    <div class="text-light">
+           {{ content }}
+    </div>
+</div>
+
+{% include footer.html %}
+</body>
+</html>
