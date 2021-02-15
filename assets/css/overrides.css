@@ -5,3 +5,9 @@ html, body {
 .bg-black {
     background-color: black !important;
 }
+
+p a {
+    text-decoration: none !important;
+    font-weight: bold !important;
+    color: white !important;
+}
