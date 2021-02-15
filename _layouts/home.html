@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+{% include header.html %}
+
+<div id="whereami" class="container mb-4">
+    <div class="badge bg-light text-dark fs-3 mb-3">Where am I ?</div>
+    <h5 class="text-light">
+       Hi, I'm Sandaidev. <br>
+       This is my blog where I write How To's, personal logs and development logs about various open-source projects.
+    </h5>
+    <hr class="text-light">
+</div>
+
+<div class="container">
+    <div class="badge bg-light text-dark fs-3 mb-3">Recent posts</div>
+    <div class="container row justify-content-center">
+
+        {% for post in site.posts %}
+
+            <div class="card bg-dark text-white text-center col-lg-5 col-12 p-2 m-3 border border-info">
+                <h5 class="card-header p-2"> {{ post.title }} </h5>
+
+                <div class="card-body p-0">
+                    <p class="card-text p-0">
+                        {{ post.excerpt }}
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    {% for tag in post.tags %}
+                        <span class="badge bg-black"> {{ tag }} </span>
+                    {% endfor %}
+                </div>
+
+                <div class="card-footer">
+                    <a class="btn btn-outline-info" href="{{ site.baseurl}}{{ post.url }}" role="button">Read on <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+                <div class="card-footer">
+                    <small class="text-muted">
+                        {{ post.date | date_to_long_string }}
+                    </small>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+</div>
+
+{% include footer.html %}
+</body>
+</html>

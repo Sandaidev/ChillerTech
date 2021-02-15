@@ -1,10 +1,12 @@
 ---
 title: RAID Arrays and why they're amazing
+layout: post
+tags: RAID Linux
+excerpt_separator: <!--more-->
 ---
 
-# Concept
-
 RAID stands for "**R**edundant **A**rray of **I**ndependent **D**isks", and it has different levels that are each tailored for a specific use case.
+<!--more-->
 
 **Here's a short list of the most popular ones** --
 
@@ -18,6 +20,10 @@ RAID stands for "**R**edundant **A**rray of **I**ndependent **D**isks", and it h
 
 So let's explain each of them in more detail, shall we?
 
+# Concept
+
+---
+
 ### RAID 0
 
 Benefit: **It spreads your data evenly accross all your drives.** Say, for example, you have four HDDs, each containing 1 TB of capacity. You want to write a 4 GB file to the array, the RAID 0 will then split your file in four chunks of 1 GB and distribute them to each drive. So when you'll want to read the 4 GB file from the array, the RAID 0 will take advantage of this and will read the four chunks of 1 GB in parallel, thus improving the read speed by 4 times!
@@ -26,8 +32,9 @@ Drawbacks: You must have a finite number of drives with the same capacity, if no
 
 Please also notice that the more drives you add to a RAID 0 array, the more it is prone to data loss. that is because the data you store on the array is ***NOT*** redundant;
 
-> **A note about redundancy**
+> ##### A note about redundancy
 >
+> --------
 > In a RAID array, having a redundant layout is having a protection mechanism in the event that a drive fails. Meaning in the simplest example, you have 2x1 TB drives, if you're writing a 4 GB file to the first drive, it gets transparently duplicated to the second drive. Now, let's say that your first drive fails, the second drive takes over the first one and your data is still there!
 
 ### RAID 1

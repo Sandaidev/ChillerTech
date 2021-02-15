@@ -1,0 +1,13 @@
+html, body {
+    background-color: black !important;
+}
+
+.bg-black {
+    background-color: black !important;
+}
+
+p a {
+    text-decoration: none !important;
+    font-weight: bold !important;
+    color: white !important;
+}
