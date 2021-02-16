@@ -10,13 +10,10 @@ RAID stands for "**R**edundant **A**rray of **I**ndependent **D**isks", and it h
 
 **Here's a short list of the most popular ones** --
 
-    - RAID 0
-  
-    - RAID 1
-  
-    - RAID 5
-  
-    - RAID 6
+- RAID 0
+- RAID 1
+- RAID 5
+- RAID 6
 
 So let's explain each of them in more detail, shall we?
 
